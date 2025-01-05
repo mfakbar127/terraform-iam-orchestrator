@@ -1,0 +1,20 @@
+users:
+  # - username: "alice"
+  #   gitlab:      
+  #     group: ["devops", "security"]
+  #     state: active
+  #   user_info:
+  #     name: "alice_gitlab"
+  #     email: "alice@example.com"
+  #     team: devops
+  - username: "john.doe"
+    gitlab:      
+      group: ["devops::reporter", "security::maintainer"]
+      state: active
+    aws:
+      path: "/"
+      group: [Security]
+    user_info:
+      name: "John Doe"
+      email: "john.doe@example.com"
+      team: security

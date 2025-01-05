@@ -1,0 +1,13 @@
+aws:
+  groups:
+    - name: DevOps
+      policies: [arn:aws:iam::aws:policy/AdministratorAccess, arn:aws:iam::aws:policy/SecurityAudit]
+
+    - name: Security
+      policies: [arn:aws:iam::aws:policy/SecurityAudit, arn:aws:iam::aws:policy/AmazonInspectorFullAccess]
+
+    - name: Developer
+      policies: [arn:aws:iam::aws:policy/PowerUserAccess, arn:aws:iam::aws:policy/AmazonS3FullAccess]
+
+gitlab:
+  groups: ["devops", "security", "product"]
